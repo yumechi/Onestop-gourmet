@@ -1,4 +1,4 @@
-name: Check Markdown File Count
+name: Notify Stats
 
 on:
   schedule:
@@ -41,3 +41,22 @@ jobs:
 
       - name: echo log file
         run: cat .github/.md-count.log
+
+      - name: 💬 Notify if count has changed
+        if: steps.current.outputs.md_count != steps.previous.outputs.prev_count
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          diff=$((steps.current.outputs.md_count - steps.previous.outputs.prev_count))
+          curl -X POST -H 'Content-type: application/json' \
+            --data "{\"text\":\"📄 原稿が生えました：${steps.previous.outputs.prev_count} → ${steps.current.outputs.md_count}（差分：$diff）\"}" \
+            ${{ env.SLACK_WEBHOOK_URL }}
+
+      # - name: Commit new count
+      #   if: steps.count.outputs.md_count != steps.previous.outputs.prev_count
+      #   run: |
+      #     git config user.name "github-actions"
+      #     git config user.email "github-actions@users.noreply.github.com"
+      #     git add .g.md-count.log
+      #     git commit -m "Update Markdown count: ${steps.count.outputs.md_count}"
+      #     git push origin HEAD:main
