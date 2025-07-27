@@ -1,10 +1,10 @@
 {
-  "name": "vivliostyle-techbook-starter",
-  "description": "Vivliostyleで技術同人誌を始めよう",
+  "name": "onestop-gourmet",
+  "description": "ワンストップ食",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "author": "erukiti <erukiti+github@gmail.com>",
+  "author": "oyakata2438",
   "scripts": {
     "build": "vivliostyle build -o screen.pdf",
     "build:print": "vivliostyle build -o print.pdf",
