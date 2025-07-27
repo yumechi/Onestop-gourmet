@@ -25,16 +25,10 @@ jobs:
         run: |
           cp ./fonts/HaranoAji*.otf /usr/share/fonts/
 
-      - name: Install BIZ UD Gothic/Mincho
-        run: |
-          sudo wget https://github.com/googlefonts/morisawa-biz-ud-mincho/releases/download/v1.06/BIZUDMincho-Regular.ttf -P /usr/share/fonts/truetype/
-          sudo wget https://github.com/googlefonts/morisawa-biz-ud-mincho/releases/download/v1.06/BIZUDMincho-Bold.ttf -P /usr/share/fonts/truetype/
-
       - name: Check installed fonts
         run: |
           fc-cache -fv
           fc-list | grep -i "harano" || true
-          fc-list | grep -i "biz" || true
 
       - name: build book for screen
         run: bun run build
