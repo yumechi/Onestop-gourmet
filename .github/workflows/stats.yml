@@ -31,6 +31,7 @@ jobs:
           else
             prev_count=0
           fi
+          echo 'prev_count=$prev_count'
           echo "prev_count=$prev_count" >> $GITHUB_OUTPUT
 
       - name: echo Markdown count
@@ -43,7 +44,7 @@ jobs:
         run: cat .github/.md-count.log
 
       - name: 💬 Notify if count has changed
-        if: steps.current.outputs.md_count != steps.previous.outputs.prev_count
+        if: steps.count.outputs.md_count != steps.previous.outputs.prev_count
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
