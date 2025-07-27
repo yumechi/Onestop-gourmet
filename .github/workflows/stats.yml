@@ -15,18 +15,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Count Markdown files
+      - name: 'Setup Deno'
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Count Chapter files
         id: count
         run: |
-          count=$(find . -type f -name "*.md" | wc -l)
-          echo "md_count=$count" >> $GITHUB_OUTPUT
-          echo "$count" > .github/.md-count.log
+          count=$(deno run --allow-read .github/scripts/count-chapters.ts | grep "Chapter files count:" | awk '{print $4}')
+          echo "chapter_count=$count" >> $GITHUB_OUTPUT
+          echo "$count" > .github/stats.log
+          echo "Chapter files count: $count"
 
       - name: Restore previous count
         id: previous
         run: |
           git fetch origin main
-          if git show origin/main:.md-count.log > old_count.txt 2>/dev/null; then
+          if git show origin/main:.github/stats.log > old_count.txt 2>/dev/null; then
             prev_count=$(cat old_count.txt)
           else
             prev_count=0
@@ -34,32 +40,17 @@ jobs:
           echo 'prev_count=$prev_count'
           echo "prev_count=$prev_count" >> $GITHUB_OUTPUT
 
-      - name: echo Markdown count
+      - name: Notify if count has changed
+        if: steps.count.outputs.chapter_count != steps.previous.outputs.prev_count
         env:
-          CURRENT_COUNT: ${{ steps.count.outputs.md_count }}
-        run: |
-          echo "Markdown file count: $CURRENT_COUNT"
-
-      - name: echo log file
-        run: cat .github/.md-count.log
-
-      - name: 💬 Notify if count has changed
-        if: steps.count.outputs.md_count != steps.previous.outputs.prev_count
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          CURRENT_COUNT: ${{ steps.count.outputs.md_count }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_DEV }}
+          CURRENT_COUNT: ${{ steps.count.outputs.chapter_count }}
           PREVIOUS_COUNT: ${{ steps.previous.outputs.prev_count }}
         run: |
-          diff=$((CURRENT_COUNT - PREVIOUS_COUNT))
-          curl -X POST -H 'Content-type: application/json' \
-            --data "{\"text\":\"📄 原稿が生えました：${PREVIOUS_COUNT} → ${CURRENT_COUNT}（差分：$diff）\"}" \
-            ${{ env.SLACK_WEBHOOK_URL }}
+          deno run --allow-env --allow-net .github/scripts/notify-stats.ts $PREVIOUS_COUNT $CURRENT_COUNT
 
-      # - name: Commit new count
-      #   if: steps.count.outputs.md_count != steps.previous.outputs.prev_count
-      #   run: |
-      #     git config user.name "github-actions"
-      #     git config user.email "github-actions@users.noreply.github.com"
-      #     git add .g.md-count.log
-      #     git commit -m "Update Markdown count: ${steps.count.outputs.md_count}"
-      #     git push origin HEAD:main
+      - name: Save stats log
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: update stats.log"
+          add: ".github/stats.log"
