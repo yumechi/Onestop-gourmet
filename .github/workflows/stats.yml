@@ -34,7 +34,9 @@ jobs:
           echo "prev_count=$prev_count" >> $GITHUB_OUTPUT
 
       - name: echo Markdown count
-        run: echo "Markdown file count: ${{steps.count.outputs.md_count}}"
+        env:
+          CURRENT_COUNT: ${{ steps.count.outputs.md_count }}
+        run: echo "Markdown file count: $CURRENT_COUNT"
 
       - name: echo log file
         run: cat .github/.md-count.log
