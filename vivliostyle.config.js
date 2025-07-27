@@ -9,7 +9,7 @@ const def = {
   size: "JIS-B5", // JIS-B5: 教科書サイズ、A5: 最近流行りの小さいサイズの技術書
   theme: [
     "./fonts",
-    "./theme-nice-techbook2",
+    "./theme-nice-techbook",
   ],
   entry: [
     // 表紙
@@ -65,15 +65,15 @@ if (isPrint) {
   def.theme = [
     ...def.theme,
     // グレースケール印刷可能なPDF
-    "./theme-nice-techbook2/theme-print-pdf.css",
+    "./theme-nice-techbook/theme-print-pdf.css",
   ];
 } else {
   def.theme = [
     ...def.theme,
     // オンライン向けのフルカラーPDF
-    "./theme-nice-techbook2/theme-online-pdf.css",
-    "./theme-nice-techbook2/theme-base/css/lib/prism/base.css",
-    "./theme-nice-techbook2/theme-base/css/lib/prism/theme-okaidia.css",
+    "./theme-nice-techbook/theme-online-pdf.css",
+    "./theme-nice-techbook/theme-base/css/lib/prism/base.css",
+    "./theme-nice-techbook/theme-base/css/lib/prism/theme-okaidia.css",
   ];
 }
 
