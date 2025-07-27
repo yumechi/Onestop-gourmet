@@ -1,0 +1,40 @@
+name: Check Markdown File Count
+
+on:
+  schedule:
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+
+jobs:
+  count-and-notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Count Markdown files
+        id: count
+        run: |
+          count=$(find . -type f -name "*.md" | wc -l)
+          echo "md_count=$count" >> $GITHUB_OUTPUT
+          echo "$count" > .github/.md-count.log
+
+      - name: Restore previous count
+        id: previous
+        run: |
+          git fetch origin main
+          if git show origin/main:.md-count.log > old_count.txt 2>/dev/null; then
+            prev_count=$(cat old_count.txt)
+          else
+            prev_count=0
+          fi
+          echo "prev_count=$prev_count" >> $GITHUB_OUTPUT
+
+      - name: echo Markdown count
+        run: echo "Markdown file count: ${{steps.count.outputs.md_count}}"
+
+      - name: echo log file
+        run: cat .github/.md-count.log
