@@ -1,4 +1,4 @@
-import { VFM } from "@vivliostyle/vfm";
+// import { VFM } from "@vivliostyle/vfm";
 
 const isPrint = process.argv.includes("print.pdf");
 
