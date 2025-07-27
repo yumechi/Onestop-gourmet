@@ -47,10 +47,12 @@ jobs:
         if: steps.count.outputs.md_count != steps.previous.outputs.prev_count
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          CURRENT_COUNT: ${{ steps.count.outputs.md_count }}
+          PREVIOUS_COUNT: ${{ steps.previous.outputs.prev_count }}
         run: |
-          diff=$((steps.current.outputs.md_count - steps.previous.outputs.prev_count))
+          diff=$((CURRENT_COUNT - PREVIOUS_COUNT))
           curl -X POST -H 'Content-type: application/json' \
-            --data "{\"text\":\"📄 原稿が生えました：${steps.previous.outputs.prev_count} → ${steps.current.outputs.md_count}（差分：$diff）\"}" \
+            --data "{\"text\":\"📄 原稿が生えました：${PREVIOUS_COUNT} → ${CURRENT_COUNT}（差分：$diff）\"}" \
             ${{ env.SLACK_WEBHOOK_URL }}
 
       # - name: Commit new count
