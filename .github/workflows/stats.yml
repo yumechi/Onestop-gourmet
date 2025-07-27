@@ -32,3 +32,5 @@ jobs:
         with:
           message: "chore: update stats.log"
           add: ".github/stats.log"
+          author_name: "github-actions[bot]"
+          author_email: "github-actions[bot]@users.noreply.github.com"

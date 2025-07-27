@@ -63,7 +63,7 @@ function buildSlackMessage(prevCount: number, currentCount: number) {
         "elements": [
           {
             "type": "mrkdwn",
-            "text": `『<https://github.com/onestop-techbook/Onestop-gourmet|ワンストップ食>』の執筆状況: 現在 *${currentCount}* 章 ${diffMessage} :books: <https://oyakata-techbook.slack.com/canvas/CDS3UGG75|執筆の手引き>`
+            "text": `『<https://github.com/onestop-techbook/Onestop-gourmet|ワンストップ食>』の執筆状況: 現在 *${currentCount}* 章 ${diffMessage} :books: <https://oyakata-techbook.slack.com/docs/TDSCKV84V/F05L3P2MXLY|執筆の手引き>`
           }
         ]
       },
