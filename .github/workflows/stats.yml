@@ -22,7 +22,7 @@ jobs:
 
       - name: Run chapter count workflow
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_DEV }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           git fetch origin main
           deno run --allow-read --allow-write --allow-net --allow-env .github/scripts/stats-workflow.ts
