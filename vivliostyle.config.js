@@ -33,6 +33,8 @@ const def = {
     "part-tips.md",
 	"chap-placeholder.md",
 
+    "chap-gomana2_1.md",
+
     // 後書き
     "90-postscript.md",
     "98-authors.md",
