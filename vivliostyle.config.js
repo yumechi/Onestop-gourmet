@@ -34,6 +34,7 @@ const def = {
 	"chap-placeholder.md",
 
     "chap-gomana2_1.md",
+    "chap-yumechi.md",
 
     // 後書き
     "90-postscript.md",
