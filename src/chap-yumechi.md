@@ -59,3 +59,4 @@ author: "yumechi"
 [^tsukemono]: 漬物 | にっぽん伝統食図鑑：農林水産省 https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/bunrui/tsukemono.html の情報を引用しています
 [^inaka-kawahara]: 【基本】ぬか床の作り方とお手入れ｜ぬか漬け歴４０年の技を伝承 https://www.youtube.com/watch?v=2sZrVAm_bq4
 [^masaki-okaasan]: 【漬物】ぬか床の作り方 https://www.youtube.com/watch?v=hgzGgUts1dQ
+[^mujirushi-nukadoko]: 発酵ぬかどこ | 無印良品 https://www.muji.com/jp/ja/store/cmdty/detail/発酵ぬかどこ/4550583915001
