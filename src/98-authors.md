@@ -55,6 +55,20 @@ class: author
 </p>
 
 
+<div class="author-profile">
+    <img src="images/yumechi_400x400.jpg">
+    <div>
+        <div>
+            <b>yumechi</b>
+            <a href="https://twitter.com/__yumechi">X@__yumechi</a>
+        </div>
+    </div>
+</div>
+<p style="margin-top: 0.5em; margin-bottom: 2em;">
+GitHub Copilot にサジェストさせようとしたら yumechi はぬか漬けを作るツールだと説明されました。焼肉と漬物が大好きで、焼肉を食べるためだけに同人誌を書くことがあります。
+</p>
+
+
 
 <!-- ページ数調整 -->
 <br />

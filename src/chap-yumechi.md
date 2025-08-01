@@ -1,6 +1,7 @@
 ---
+title: "ぬか漬けを自分で作ってみよう"
 class: chapter
-author: yumechi
+author: "yumechi"
 ---
 
 # ぬか漬けを自分で作ってみよう
