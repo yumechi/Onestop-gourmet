@@ -37,7 +37,7 @@ const def = {
     "chap-gomana2_1.md",
     "chap-yumechi.md",
     "chap-mottox2-coffee.md",
-    
+    "chap-forte_1.md",
 
     // 後書き
     "90-postscript.md",
