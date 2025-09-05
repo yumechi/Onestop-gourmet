@@ -39,7 +39,11 @@ const def = {
     "chap-mottox2-coffee.md",
     "chap-forte_1.md",
     "chap-forte_2.md",
-
+    
+    "chap-ditflame_01_zosui.md",
+    "chap-ditflame_02_thanko_ricecooker.md",
+    "chap-ditflame_09_shareholder_greeting.md",
+    
     // 後書き
     "90-postscript.md",
     "98-authors.md",
@@ -85,4 +89,5 @@ if (isPrint) {
 }
 
 export default def;
+
 
