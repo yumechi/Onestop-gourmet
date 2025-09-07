@@ -43,6 +43,8 @@ const def = {
     "chap-ditflame_01_zosui.md",
     "chap-ditflame_02_thanko_ricecooker.md",
     "chap-ditflame_05_auto_washer.md",
+    "chap-ditflame_04_cream_pasta.md",
+    "chap-ditflame_06_easy_fukuromen.md",
     
     // 後書き
     "90-postscript.md",
@@ -89,6 +91,7 @@ if (isPrint) {
 }
 
 export default def;
+
 
 
 
