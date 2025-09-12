@@ -40,6 +40,7 @@ const def = {
     "chap-forte_1.md",
     "chap-forte_2.md",
     "chap-forte_3.md",
+    "chap-forte_4.md",
     
     "chap-ditflame_01_zosui.md",
     "chap-ditflame_02_thanko_ricecooker.md",
