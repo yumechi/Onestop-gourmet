@@ -37,10 +37,12 @@ const def = {
     "chap-gomana2_1.md",
     "chap-yumechi.md",
     "chap-mottox2-coffee.md",
-    "chap-forte_1.md",
-    "chap-forte_2.md",
-    "chap-forte_3.md",
-    "chap-forte_4.md",
+    "chap-forte_1_short-diet.md",
+    "chap-forte_2_Seasonal-foods.md",
+    "chap-forte_3_Specialty-store.md",
+    "chap-forte_4_low-salt.md",
+
+    "chap-recommended_cooking_equipment.md",
     
     "chap-ditflame_01_zosui.md",
     "chap-ditflame_02_thanko_ricecooker.md",
