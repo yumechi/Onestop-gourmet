@@ -33,7 +33,8 @@ const def = {
     // 第二部 Vivliostyleについて
     "part-tips.md",
 	"chap-placeholder.md",
-
+	"chap-oyakata-cookingenginerring.md",
+	"chap-rhodium-thermal.md",
     "chap-gomana2_1.md",
     "chap-yumechi.md",
     "chap-mottox2-coffee.md",
