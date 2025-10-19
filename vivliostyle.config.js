@@ -33,12 +33,24 @@ const def = {
     // 第二部 Vivliostyleについて
     "part-tips.md",
 	"chap-placeholder.md",
-
+	"chap-oyakata-cookingenginerring.md",
+	"chap-rhodium-thermal.md",
     "chap-gomana2_1.md",
     "chap-yumechi.md",
     "chap-mottox2-coffee.md",
-    
+    "chap-forte_1_short-diet.md",
+    "chap-forte_2_Seasonal-foods.md",
+    "chap-forte_3_Specialty-store.md",
+    "chap-forte_4_low-salt.md",
 
+    "chap-recommended_cooking_equipment.md",
+    
+    "chap-ditflame_01_zosui.md",
+    "chap-ditflame_02_thanko_ricecooker.md",
+    "chap-ditflame_05_auto_washer.md",
+    "chap-ditflame_04_cream_pasta.md",
+    "chap-ditflame_06_easy_fukuromen.md",
+    
     // 後書き
     "90-postscript.md",
     "98-authors.md",
@@ -84,4 +96,7 @@ if (isPrint) {
 }
 
 export default def;
+
+
+
 
