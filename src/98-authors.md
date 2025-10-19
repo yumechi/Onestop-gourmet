@@ -85,6 +85,23 @@ GitHub Copilot にサジェストさせようとしたら yumechi はぬか漬�
 Webアプリケーションのバックエンドエンジニアですが、いろいろやってます。Twitter、ブログ、Podcast配信、数多くの趣味と楽しく活動中。
 </p>
 
+<div class="author-profile">
+    <img src="images/yuusukesan_400_400.png">
+    <div>
+        <div>
+            <b>おかもとゆうすけ</b>
+            <a href="https://x.com/yuusukesan18">Twitter(X)@yuusukesan18</a>
+        </div>
+        <div>
+            サークル名：はーふテックサークル
+            <a href="https://techbookfest.org/organization/7pj05qVaGLL0f2HHhJGZzk">技術書典サークルページ</a>
+        </div>
+    </div>
+</div>
+<p style="margin-top: 0.5em; margin-bottom: 2em;">
+都内でソフトウェアエンジニアとして働いています。主戦場は、Go言語。
+</p>
+
 <!-- ページ数調整 -->
 <br />
 <br />
