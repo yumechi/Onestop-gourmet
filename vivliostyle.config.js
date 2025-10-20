@@ -51,6 +51,8 @@ const def = {
     "chap-ditflame_05_auto_washer.md",
     "chap-ditflame_04_cream_pasta.md",
     "chap-ditflame_06_easy_fukuromen.md",
+
+    "chap-yuusukesan18.md",
     
     // 後書き
     "90-postscript.md",
