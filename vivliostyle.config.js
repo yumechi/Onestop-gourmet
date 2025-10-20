@@ -44,6 +44,7 @@ const def = {
     "chap-forte_4_low-salt.md",
 
     "chap-recommended_cooking_equipment.md",
+    "chap-recommended_shop.md",
     
     "chap-ditflame_01_zosui.md",
     "chap-ditflame_02_thanko_ricecooker.md",
