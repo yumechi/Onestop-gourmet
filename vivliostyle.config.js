@@ -42,6 +42,7 @@ const def = {
     "chap-forte_2_Seasonal-foods.md",
     "chap-forte_3_Specialty-store.md",
     "chap-forte_4_low-salt.md",
+    "chap-forte_5_media.md",
 
     "chap-recommended_cooking_equipment.md",
     "chap-recommended_shop.md",
