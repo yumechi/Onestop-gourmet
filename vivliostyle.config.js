@@ -54,6 +54,10 @@ const def = {
     "chap-ditflame_06_easy_fukuromen.md",
 
     "chap-yuusukesan18.md",
+
+    "chap-ponyoxa.md",
+
+    "chap-column.md",
     
     // 後書き
     "90-postscript.md",
