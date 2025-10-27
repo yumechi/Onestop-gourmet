@@ -57,6 +57,9 @@ const def = {
 
     "chap-ponyoxa.md",
 
+    "chap-llminatoll_1_rusk.md",
+    "chap-llminatoll_2_sake.md",
+
     "chap-column.md",
     
     // 後書き
