@@ -120,7 +120,7 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 </p>
 
 <div class="author-profile">
-    <img src="images/ponyoxa_icon.jpg">
+    <img src="images/ponyoxa_icon.png">
     <div>
         <div>
             <b>ぽにょ</b>
