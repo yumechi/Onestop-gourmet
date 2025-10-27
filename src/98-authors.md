@@ -119,6 +119,22 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 解説漫画家。表紙イラストと、「材料3つ、5分でつくるラスク」「鮭の柚子胡椒ホイル蒸し」のレシピを担当しました。2023年に我が子をデプロイし、しばらく運用（育児）にかかりきりでした。最近やっと手が離れてきましたので、やっていくぞ〜という気持ちです。久々に「ワンストップくんちゃん」を描けて楽しかったです。表紙の料理がおいしそうに見えているといいのですが。
 </p>
 
+<div class="author-profile">
+    <img src="images/ponyoxa_icon.jpg">
+    <div>
+        <div>
+            <b>ぽにょ</b>
+            <a href="https://x.com/ponyoxa/">Twitter(X)@ponyoxa</a>
+        </div>
+        <div>
+            サークル名：EverTail Lab
+            <a href="https://ponyoxa.com/circle">ponyoxa ホームページ</a>
+        </div>
+    </div>
+</div>
+<p style="margin-top: 0.5em; margin-bottom: 2em;">
+主にバックエンドエンジニア。キーボードが好き。
+</p>
 
 <!-- ページ数調整 -->
 <br />
