@@ -136,6 +136,27 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 主にバックエンドエンジニア。キーボードが好き。
 </p>
 
+<div class="author-profile">
+    <img src="images/kouno_400x400_icon.jpg">
+    <div>
+        <div>
+            <b>こうの</b>
+            <a href="https://x.com/hk_it7/">Twitter(X)@hk_it7</a>
+        </div>
+        <div>
+            サークル名：東葛.dev
+            <a href="https://toukatsu.dev">東葛.dev ホームページ</a>
+        </div>
+        <div>
+            サークル名：世迷言ラボ
+            <a href="https://techbookfest.org/organization/rnVvRqmvCMGPKfZ6DgE0gM">技術書典サークルページ</a>
+        </div>
+    </div>
+</div>
+<p style="margin-top: 0.5em; margin-bottom: 2em;">
+仕事はtoCサービスをRuby on Rails、Javaで作っている。テックリードらしい。東葛.devというコミュニティやってます。
+</p>
+
 <!-- ページ数調整 -->
 <br />
 <br />
