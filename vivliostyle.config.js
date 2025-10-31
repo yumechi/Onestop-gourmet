@@ -58,6 +58,8 @@ const def = {
 
     "chap-ponyoxa.md",
 
+    "chap-kouno.md",
+
     "chap-llminatoll_1_rusk.md",
     "chap-llminatoll_2_sake.md",
 
